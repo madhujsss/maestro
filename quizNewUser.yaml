@@ -1,0 +1,23 @@
+appId: "com.example.nudgetest_demoqa1"
+
+
+---
+
+- launchApp: "com.example.nudgetest_demoqa1"
+- tapOn: 
+     id: "User Identifier"
+- inputText:
+    id: "username_input"  # Replace with the correct element ID
+    text: "testuser@example.com"
+- inputText:
+    id: "password_input"
+    text: "password123"
+- tapOn: 
+    id: "submitButton" 
+- assertVisible:         # Verify successful login
+    id: "userProfileIcon" 
+- back: {}
+- tapOn:
+    id: "Track Quiz"
+- assertVisible:         # Verify successful login
+    id: "userProfileIcon" 

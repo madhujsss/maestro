@@ -1,0 +1,17 @@
+appId: "com.example.nudgetest_demoqa1"
+
+
+---
+
+- launchApp: "com.example.nudgetest_demoqa1"
+
+- tapOn:                  # Navigate to the stories section
+    id: "Track Story"
+- assertVisible:         # Verify successful login
+    id: "userProfileIcon" 
+- tapOn:                   # Start a new story
+    id: "existing"     
+- assertVisible:       # Verify the story starts correctly and progresses as expected
+    id: "storyProgression"
+- assertVisible: 
+    id: "storyProgression"

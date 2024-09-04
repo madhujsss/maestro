@@ -1,0 +1,21 @@
+appId: "com.example.nudgetest_demoqa1"  
+
+
+---
+
+# Commands Section
+- launchApp: "com.example.nudgetest_demoqa1"
+- assertVisible:
+    id: "Track Story"  # Check that home screen is displayed
+- tapOn: "Track Story"
+- tapOn: "Login"
+- inputText:
+    id: "username_input"  # Replace with the correct element ID
+    text: "testuser@example.com"
+- inputText:
+    id: "password_input"
+    text: "password123"
+- tapOn: "Login"
+- assertVisible:
+    id: "Track Story"  # Check that home screen is displayed
+

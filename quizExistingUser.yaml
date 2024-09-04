@@ -1,0 +1,11 @@
+appId: "com.example.nudgetest_demoqa1"
+
+
+---
+
+- launchApp: "com.example.nudgetest_demoqa1"
+- tapOn:
+    id: "Track Quiz"
+- assertVisible:         # Verify successful login
+    id: "userProfileIcon" 
+  
